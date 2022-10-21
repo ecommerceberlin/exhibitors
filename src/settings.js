@@ -155,13 +155,13 @@ const settings = {
 
    support: [
      {
-      initials: "KM",
-      fname: "Karolina",
-      lname: "Michalak",
-      position: "Relationship Manager",
-      phone: "+48 721 945 134",
-      email: "hello@targiehandlu.com.pl",
-      avatar: "https://res.cloudinary.com/eventjuicer/image/upload/v1598009850/targiehandlu_people_km.jpg"
+      initials: "DK",
+      fname: "Dominik",
+      lname: "Kleina",
+      position: "Account Manager",
+      phone: "+49 30 2555 9879",
+      email: "hello@ecommerceberlin.com",
+      avatar: "https://res.cloudinary.com/ecommerceberlin/image/upload/w_200,c_fit,f_auto/v1648629512/Exhibitors/expojuicer/Dominik_Kleina.jpg"
      }
    ],
 
@@ -187,23 +187,23 @@ const settings = {
     {name: "event", icon: BuildIcon, children: [
       {name: "logistics", visible: true}, 
       {name: "representatives", visible: true}, 
-      {name: "arrangement", visible: true}, 
-      {name: "vouchers", visible: true}, 
+      {name: "arrangement", visible: false}, 
+      {name: "vouchers", visible: false}, 
       {name: "register/party", visible: false}, 
     ]},
 
     {name: "leads", icon: RecentActorsIcon, children: [
-      {name: "visitors", visible: true}, 
-      {name: "meetups", visible: true}, 
-      {name: "vips", visible: true}, 
+      {name: "visitors", visible: false}, 
+      {name: "meetups", visible: false}, 
+      {name: "vips", visible: false}, 
      // {name: "requests", visible: false}, 
       {name: "scans", visible: false}, 
     ]},
 
     {name: "promo", icon: VolumeUpIcon, children: [
-      {name: "premium", visible: true}, 
-      {name: "ranking", visible: true}, 
-      {name: "promote", visible: true}, 
+      {name: "premium", visible: false}, 
+      {name: "ranking", visible: false}, 
+      {name: "promote", visible: false}, 
       {name: "posts", visible: false}, 
     ]},
 
