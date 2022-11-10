@@ -187,7 +187,7 @@ const settings = {
     {name: "event", icon: BuildIcon, children: [
       {name: "logistics", visible: true}, 
       {name: "representatives", visible: true}, 
-      {name: "arrangement", visible: false}, 
+      {name: "arrangement", visible: true}, 
       {name: "vouchers", visible: false}, 
       {name: "register/party", visible: false}, 
     ]},
@@ -201,7 +201,7 @@ const settings = {
     ]},
 
     {name: "promo", icon: VolumeUpIcon, children: [
-      {name: "premium", visible: false}, 
+      {name: "premium", visible: true}, 
       {name: "ranking", visible: false}, 
       {name: "promote", visible: false}, 
       {name: "posts", visible: false}, 
