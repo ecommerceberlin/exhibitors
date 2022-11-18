@@ -154,15 +154,15 @@ const settings = {
    },
 
    support: [
-     {
-      initials: "DK",
-      fname: "Dominik",
-      lname: "Kleina",
-      position: "Account Manager",
-      phone: "+49 30 2555 9879",
-      email: "hello@ecommerceberlin.com",
-      avatar: "https://res.cloudinary.com/ecommerceberlin/image/upload/w_200,c_fit,f_auto/v1648629512/Exhibitors/expojuicer/Dominik_Kleina.jpg"
-     }
+    //  {
+    //   initials: "DK",
+    //   fname: "Dominik",
+    //   lname: "Kleina",
+    //   position: "Account Manager",
+    //   phone: "+49 30 2555 9879",
+    //   email: "hello@ecommerceberlin.com",
+    //   avatar: "https://res.cloudinary.com/ecommerceberlin/image/upload/w_200,c_fit,f_auto/v1648629512/Exhibitors/expojuicer/Dominik_Kleina.jpg"
+    //  }
    ],
 
    event: {
