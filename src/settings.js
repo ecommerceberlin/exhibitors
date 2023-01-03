@@ -274,7 +274,7 @@ const settings = {
                     {
                       label: "promo",
                       icon: VolumeUpIcon,
-                      // edit: "/promote",
+                       edit: "/promote",
                       // check: true
                     }
                   
@@ -287,7 +287,7 @@ const settings = {
                     {
                       label: "meetups",
                       icon: RecentActorsIcon,
-                      // edit: "/visitors",
+                      edit: "/visitors",
                       check: "/checks/meetups"
                     },
 
@@ -308,7 +308,7 @@ const settings = {
                     {
                       label: "vouchers",
                       icon: BuildIcon,
-                      // edit: "/vouchers",
+                      edit: "/vouchers",
                       important: true,
                       // check: true
                     },
