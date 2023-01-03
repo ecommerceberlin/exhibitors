@@ -274,7 +274,7 @@ const settings = {
                     {
                       label: "promo",
                       icon: VolumeUpIcon,
-                      edit: "/promote",
+                      // edit: "/promote",
                       // check: true
                     }
                   
