@@ -189,7 +189,7 @@ const settings = {
       {name: "representatives", visible: true}, 
       {name: "arrangement", visible: true}, 
       {name: "vouchers", visible: true}, 
-      {name: "party", visible: false}, 
+      {name: "party", visible: true}, 
     ]},
 
     {name: "leads", icon: RecentActorsIcon, children: [
