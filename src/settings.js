@@ -188,7 +188,7 @@ const settings = {
       {name: "logistics", visible: true}, 
       {name: "representatives", visible: false}, 
       {name: "arrangement", visible: true}, 
-      {name: "vouchers", visible: false}, 
+      {name: "vouchers", visible: true}, 
       {name: "party", visible: false}, 
     ]},
 
