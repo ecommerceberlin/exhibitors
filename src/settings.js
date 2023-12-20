@@ -58,7 +58,7 @@ const settings = {
     banners: [
       {
         name: "twitter/linkedin/facebook 1920x1080",
-        asset_id:  "ebe7/EBE_Promo_Ninja_1920_1080",
+        asset_id:  "teh24/teh_fb_tt_li",
         text_xy: [80, 80],
         text_size: 150,
         text_gravity: "south_east",
@@ -66,7 +66,7 @@ const settings = {
       },
       {
         name: "instagram 1080x1080",
-        asset_id:  "ebe7/EBE_Promo_Ninja_1080_1080",
+        asset_id:  "teh24/teh_instagram",
         text_xy: [70, 70],
         text_size: 120,
         text_gravity: "south_east",
@@ -75,7 +75,7 @@ const settings = {
       
       {
         name: "468x60",
-        asset_id:  "ebe7/EBE_Promo_Ninja_468_60",
+        asset_id:  "teh24/teh_banner_468x60",
         text_xy: [30, 12],
         text_size: 25,
         text_gravity: "south_east",
@@ -83,7 +83,7 @@ const settings = {
       },
       {
         name: "336x280",
-        asset_id:  "ebe7/EBE_Promo_Ninja_336_280",
+        asset_id:  "teh24/teh_banner_336x280",
         text_xy: [40, 22],
         text_size: 50,
         text_gravity: "south_east",
@@ -91,7 +91,7 @@ const settings = {
       },
       {
         name: "300x250",
-        asset_id:  "ebe7/EBE_Promo_Ninja_300_250 ",
+        asset_id:  "teh24/teh_banner_300x250",
         text_xy: [20, 20],
         text_size: 25,
         text_gravity: "south_east",
@@ -100,7 +100,7 @@ const settings = {
     
       {
         name: "728x90",
-        asset_id:   "ebe7/EBE_Promo_Ninja_728_90",
+        asset_id:   "teh24/teh_banner_728x90",
         text_xy: [55, 15],
         text_size: 35,
         text_gravity: "south_east",
@@ -108,7 +108,7 @@ const settings = {
       },
       {
         name: "250x250", 
-        asset_id:   "ebe7/EBE_Promo_Ninja_250_250",
+        asset_id:   "teh24/teh_banner_250x250",
         text_xy: [20, 17],
         text_size: 30,
         text_gravity: "south_east",
@@ -122,7 +122,8 @@ const settings = {
   companydata: {
 
     
-    texts: ["about", "products"],
+    markdown: ["about", "products"],
+    longtexts: ["ltd_reject_template", "ltd_accept_template"],
     links: ["website", "linkedin", "twitter", "facebook"],
     tags: ["keywords"],
     translatable: ["countries"],
@@ -154,15 +155,15 @@ const settings = {
    },
 
    support: [
-    //  {
-    //   initials: "DK",
-    //   fname: "Dominik",
-    //   lname: "Kleina",
-    //   position: "Account Manager",
-    //   phone: "+49 30 2555 9879",
-    //   email: "hello@ecommerceberlin.com",
-    //   avatar: "https://res.cloudinary.com/ecommerceberlin/image/upload/w_200,c_fit,f_auto/v1648629512/Exhibitors/expojuicer/Dominik_Kleina.jpg"
-    //  }
+     {
+      initials: "KM",
+      fname: "Karolina",
+      lname: "Michalak",
+      position: "Relationship Manager",
+      phone: "+48 721 945 134",
+      email: "hello@targiehandlu.com.pl",
+      avatar: "https://res.cloudinary.com/eventjuicer/image/upload/v1598009850/targiehandlu_people_km.jpg"
+     }
    ],
 
    event: {
@@ -186,24 +187,23 @@ const settings = {
     ]},
     {name: "event", icon: BuildIcon, children: [
       {name: "logistics", visible: true}, 
-      {name: "representatives", visible: false}, 
+      {name: "representatives", visible: true}, 
       {name: "arrangement", visible: true}, 
       {name: "vouchers", visible: true}, 
-      {name: "party", visible: false}, 
+      {name: "register/party", visible: false}, 
     ]},
 
     {name: "leads", icon: RecentActorsIcon, children: [
-      {name: "visitors", visible: false}, 
-      {name: "meetups", visible: false}, 
-      {name: "vips", visible: false}, 
-     // {name: "requests", visible: false}, 
+      {name: "visitors", visible: true}, 
+      {name: "meetups", visible: true}, 
+      {name: "vips", visible: true}, 
       {name: "scans", visible: true}, 
     ]},
 
     {name: "promo", icon: VolumeUpIcon, children: [
       {name: "premium", visible: true}, 
-      {name: "ranking", visible: false}, 
-      {name: "promote", visible: false}, 
+      {name: "ranking", visible: true}, 
+      {name: "promote", visible: true}, 
       {name: "posts", visible: false}, 
     ]},
 
@@ -274,7 +274,7 @@ const settings = {
                     {
                       label: "promo",
                       icon: VolumeUpIcon,
-                       edit: "/promote",
+                      edit: "/promote",
                       // check: true
                     }
                   

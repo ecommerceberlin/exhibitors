@@ -1,44 +1,51 @@
 import React from 'react';
-import { List, useListContext} from 'react-admin';
+import { List, useListContext, ListBase, Datagrid} from 'react-admin';
+import {ButtonBase}from '@material-ui/core'
 import {find, isEmpty} from '../../helpers'
-import { useSettings } from '../../contexts';
-import CompanyDataListActions from './CompanyDataListActions';
+import { useSettings, useLimit } from '../../contexts';
+// import CompanyDataListActions from './CompanyDataListActions';
 import withLogin from '../withLogin'
 import { Grid, Box, ResourceTitle } from '../../components'
-import { CustomTextField, CustomTagsField, CustomLinkField, CompanyLogotype, CustomMarkdownField, CustomTranslatableField } from './components';
+// import { CustomTextField, CustomTagsField, CustomLinkField, CompanyLogotype, CustomMarkdownField, CustomTranslatableField } from './components';
 
 
 const CustomIterator = () => {
   const { ids, data, basePath, loaded} = useListContext();
-  const fields = useSettings("companydata", {})
+  const fields = useSettings("vips", {})
   const get = (name) => find(data, {name}) || {}
+const limit = useLimit("vips")
+
+    console.log({data, limit})
 
   if(isEmpty(fields)){
     console.error("define visible fields in settings!")
-    return null
+    // return null
   }
   
   if(!loaded){
-    return null
+    // return null
   }
 
-  const {markdown, longtexts, tags, translatable, links} = fields
+  const {texts, tags, translatable, links} = fields
   
+  return <Box>
+    <ButtonBase><Box></Box></ButtonBase>
+  </Box>
 
   return <Box m={2}>
   <Grid container spacing={3} direction="row">
   <Grid item xs={12} sm={12} md={2} lg={2} xl={2}>
 
-    <CompanyLogotype preview={get("logotype").value} id={get("logotype").id} />
+    {/* <CompanyLogotype preview={get("logotype").value} id={get("logotype").id} /> */}
      
   </Grid>
   <Grid item xs={12} sm={12} md={10} lg={8} xl={8}>
       
-      <CustomTextField name={get("name").name} value={get("name").value} id={get("name").id} />
-      {markdown.map(key => <CustomMarkdownField key={key} name={get(key).name} value={get(key).value} id={get(key).id} />)}
+      {/* <CustomTextField name={get("name").name} value={get("name").value} id={get("name").id} />
+      {texts.map(key => <CustomMarkdownField key={key} name={get(key).name} value={get(key).value} id={get(key).id} />)}
       {tags.map(key => <CustomTagsField key={key} name={get(key).name}value={get(key).value} id={get(key).id} />)}
       {translatable.map(key => <CustomTranslatableField key={key} name={get(key).name} value={get(key).value} id={get(key).id} />)}
-      {links.map(key => <CustomLinkField key={key} name={get(key).name} value={get(key).value} id={get(key).id} />)}
+      {links.map(key => <CustomLinkField key={key} name={get(key).name} value={get(key).value} id={get(key).id} />)} */}
   </Grid>
   </Grid>
   </Box>
@@ -52,7 +59,7 @@ const ViewList = props => {
     <List
       {...props}
       exporter={false}
-      actions={<CompanyDataListActions/>}
+    //   actions={<CompanyDataListActions/>}
       bulkActionButtons={false}
       perPage={100}
       title={ <ResourceTitle {...props} />}
