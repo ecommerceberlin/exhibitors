@@ -20,6 +20,8 @@ import { VisitorList, VisitorIcon } from './views/visitors';
 import { PostList, PostEdit, PostCreate} from './views/posts';
 import { VipList, VipIcon } from './views/vips';
 import { RequestList, RequestIcon} from './views/requests';
+import { DeliveryIcon } from './views/delivery';
+import { TechnicalGuidelinesIcon } from './views/technicalguidelines';
 
 
 // import { ViewList as NewsletterList } from './views/newsletters';
@@ -47,6 +49,8 @@ const resources =  [
   <Resource key="scans" name="scans" list={ScanList} edit={ScanEdit} icon={ScanIcon} />,
   <Resource key="posts" name="posts" list={PostList} edit={PostEdit} create={PostCreate} />,
   <Resource key="vips" name="vips" list={VipList} icon={VipIcon}  />,
+  <Resource key="delivery" name="delivery" icon={DeliveryIcon}/>,
+  <Resource key="technicalguidelines" name="technicalguidelines" icon={TechnicalGuidelinesIcon}/>,
 
   <Resource key="requests" name="requests" list={RequestList}  />,
   // <Resource key="banners" name="banners" list={BannerList} />,

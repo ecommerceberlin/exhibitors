@@ -190,6 +190,8 @@ const settings = {
       {name: "representatives", visible: false}, 
       {name: "arrangement", visible: true}, 
       {name: "vouchers", visible: true}, 
+      {name: "delivery", visible: true}, 
+      {name: "technicalguidelines", visible: true}, 
       {name: "party", visible: false}, 
     ]},
 
@@ -235,12 +237,6 @@ const settings = {
                       icon : BusinessIcon
                     },
                     {
-                      label: "reps",
-                      check: "/checks/representatives",
-                      edit: "/representatives",
-                      icon : BuildIcon
-                    },
-                    {
                       label: "arrangement",
                       check: "/checks/arrangement",
                       edit: "/arrangement",
@@ -250,6 +246,11 @@ const settings = {
                         // <BuyTicketByNameButton key="clearspace" name="clearspace" />
                       ]
                       // filter={(item) => item.role=="service_external"}
+                    },
+                    {
+                      label: "technical",
+                      icon : BuildIcon,
+                      edit: "/technicalguidelines",
                     },
                     {
                       label: "premium",
@@ -273,12 +274,31 @@ const settings = {
                       //filter={(item) => item.role=="service_external"}
                     },
                     {
+                      label: "reps",
+                      check: "/checks/representatives",
+                      edit: "/representatives",
+                      icon : BuildIcon
+                    },
+                    {
                       label: "promo",
                       icon: VolumeUpIcon,
                        edit: "/promote",
                       // check: true
                     }
                   
+                  ]
+                },
+                {
+                  label: "week",
+                  days: -7,
+                  items: [
+                    {
+                      label: "shipment",
+                      icon : BuildIcon,
+                      important: true,
+                      edit: "/delivery",
+
+                    },
                   ]
                 },
                 {
@@ -313,16 +333,6 @@ const settings = {
                       important: true,
                       // check: true
                     },
-                  ]
-                },
-                {
-                  label: "week",
-                  days: -7,
-                  items: [
-                    {
-                      label: "shipment",
-                      important: true,
-                    }
                   ]
                 },
                 {
