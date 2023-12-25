@@ -8,6 +8,8 @@ import {default as Ranking, RankingIcon} from '../views/ranking';
 import {default as Logistics, LogisticsIcon} from '../views/logistics'
 import {default as Promote, PromoteIcon} from '../views/promote'
 import {ScanTutorial, ScanIcon} from '../views/scans'
+import Delivery from '../views/delivery';
+import TechnicalGuidelines from '../views/technicalguidelines';
 
 export default [
   <Route exact path="/configuration"><Configuration /></Route>,
@@ -15,6 +17,8 @@ export default [
   <Route exact path="/promote" icon={PromoteIcon} component={Promote} />,
   <Route aaa="bbb" exact path="/logistics" icon={LogisticsIcon} component={Logistics} />,
   <Route exact path="/badgescanner" icon={ScanIcon} component={ScanTutorial} />,
+  <Route exact path="/delivery" component={Delivery} />,
+  <Route exact path="/technicalguidelines" component={TechnicalGuidelines} />,
 
 
   // <Route exact path="/rewards" component={Rewards} />,
