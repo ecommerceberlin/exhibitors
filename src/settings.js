@@ -192,7 +192,7 @@ const settings = {
       {name: "vouchers", visible: true}, 
       {name: "delivery", visible: true}, 
       {name: "technicalguidelines", visible: true}, 
-      {name: "party", visible: false}, 
+      {name: "party", visible: true}, 
     ]},
 
     {name: "leads", icon: RecentActorsIcon, children: [
