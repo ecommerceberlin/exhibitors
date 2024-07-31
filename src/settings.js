@@ -256,6 +256,28 @@ const settings = {
                       edit: "/premium",
                       icon: VolumeUpIcon,
                       details: <CompanyPurchases filter={(item)=>item.featured} />
+                    },
+                    {
+                      label: "top10",
+                      icon: RecentActorsIcon
+                    }
+                  ]
+                },
+                {
+                  label: "continuous",
+                  days: -20,
+                  items: [
+                    {
+                      label: "cfp",
+                      icon: VolumeUpIcon,
+                    },
+                    {
+                      label: "ega",
+                      icon: VolumeUpIcon,
+                    },
+                    {
+                      label: "egn",
+                      icon: VolumeUpIcon,
                     }
                   ]
                 },
