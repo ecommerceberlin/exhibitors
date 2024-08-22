@@ -206,6 +206,7 @@ const settings = {
       {name: "premium", visible: true}, 
       {name: "ranking", visible: false}, 
       {name: "promote", visible: false}, 
+      {name: "speaking", visible: true}, 
       {name: "posts", visible: false}, 
     ]},
 

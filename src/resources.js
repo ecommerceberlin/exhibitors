@@ -22,6 +22,7 @@ import { VipList, VipIcon } from './views/vips';
 import { RequestList, RequestIcon} from './views/requests';
 import { DeliveryIcon } from './views/delivery';
 import { TechnicalGuidelinesIcon } from './views/technicalguidelines';
+import { SpeakingIcon } from './views/speaking';
 
 
 // import { ViewList as NewsletterList } from './views/newsletters';
@@ -51,6 +52,7 @@ const resources =  [
   <Resource key="vips" name="vips" list={VipList} icon={VipIcon}  />,
   <Resource key="delivery" name="delivery" icon={DeliveryIcon}/>,
   <Resource key="technicalguidelines" name="technicalguidelines" icon={TechnicalGuidelinesIcon}/>,
+  <Resource key="speaking" name="speaking" icon={SpeakingIcon}/>,
 
   <Resource key="requests" name="requests" list={RequestList}  />,
   // <Resource key="banners" name="banners" list={BannerList} />,

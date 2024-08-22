@@ -10,6 +10,7 @@ import {default as Promote, PromoteIcon} from '../views/promote'
 import {ScanTutorial, ScanIcon} from '../views/scans'
 import Delivery from '../views/delivery';
 import TechnicalGuidelines from '../views/technicalguidelines';
+import Speaking from '../views/speaking';
 
 export default [
   <Route exact path="/configuration"><Configuration /></Route>,
@@ -19,6 +20,7 @@ export default [
   <Route exact path="/badgescanner" icon={ScanIcon} component={ScanTutorial} />,
   <Route exact path="/delivery" component={Delivery} />,
   <Route exact path="/technicalguidelines" component={TechnicalGuidelines} />,
+  <Route exact path="/speaking" component={Speaking} />,
 
 
   // <Route exact path="/rewards" component={Rewards} />,
