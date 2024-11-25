@@ -188,10 +188,10 @@ const settings = {
       {name: "logistics", visible: true}, 
       {name: "representatives", visible: false}, 
       {name: "arrangement", visible: true}, 
-      {name: "vouchers", visible: false}, 
-      {name: "delivery", visible: false}, 
+      {name: "vouchers", visible: true}, 
+      {name: "delivery", visible: true}, 
       {name: "technicalguidelines", visible: true}, 
-      {name: "party", visible: false}, 
+      {name: "party", visible: true}, 
     ]},
 
     // {name: "leads", icon: RecentActorsIcon, children: [
