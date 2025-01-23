@@ -1,14 +1,12 @@
-
-
 import React from 'react';
 import {
   required,
   email,
   minLength,
   number,
-  maxLength
+  maxLength,
+  SelectInput
 } from 'react-admin';
-
 
 import { TextInput } from '../../fields';
 
@@ -49,11 +47,20 @@ const fields = [
     source="profile.phone"
     validate={ [required(), number(),  minLength(8), maxLength(20)] }
   
+  />,
+
+  <SelectInput
+    key="hidden"
+    source="profile.unsubscribed"
+    label="Matchmaking tool access"
+    helperText="By selecting 'Yes, hide me.', your personal information will be removed from the attendee list, and neither you nor others will be able to connect through our matchmaking tool."
+    choices={[
+        { id: 0, name: 'No, show me.' },
+        { id: 1, name: 'Yes, hide me.' }
+    ]}
+    defaultValue={0}
   />
 
-
-
 ]
-
 
 export default fields
