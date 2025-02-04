@@ -194,13 +194,13 @@ const settings = {
       {name: "party", visible: true}, 
     ]},
 
-    // {name: "leads", icon: RecentActorsIcon, children: [
+    {name: "leads", icon: RecentActorsIcon, children: [
     //   {name: "visitors", visible: true}, 
-    //   {name: "meetups", visible: true}, 
+      {name: "meetups", visible: true}, 
     //   {name: "vips", visible: true}, 
     //  // {name: "requests", visible: false}, 
     //   {name: "scans", visible: true}, 
-    // ]},
+    ]},
 
     {name: "promo", icon: VolumeUpIcon, children: [
       {name: "premium", visible: true}, 
