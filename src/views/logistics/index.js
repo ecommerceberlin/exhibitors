@@ -45,8 +45,8 @@ const Logistics = () => {
       <InfoBox />
       <Box className={classes.sectionBox}>
         <Grid container spacing={3}>
-          <Grid item xs={12} md={6}>
-            <Box className={classes.videoContainer}>
+          <Grid item xs={12} md={9}>
+            {/* <Box className={classes.videoContainer}>
               <iframe
                 src="https://www.youtube.com/embed/qs3Kbnd-jrw"
                 title={translate('timeline.introvideo.title')}
@@ -55,9 +55,17 @@ const Logistics = () => {
                 allowFullScreen
                 className={classes.iframe}
               ></iframe>
+            </Box> */}
+            <Box className={classes.videoContainer}>
+              <img
+                src="https://res.cloudinary.com/eventjuicer/image/upload/v1752142198/TimelineCycle_nisb4t.png"
+                alt={translate('timeline.introvideo.title')}
+                className={classes.iframe} 
+              />
             </Box>
+
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={3}>
             <Typography variant="h6" component="h2" gutterBottom>
               {translate('timeline.introvideo.title')}
             </Typography>

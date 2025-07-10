@@ -1,6 +1,7 @@
 
 import {createTheme, responsiveFontSizes} from '@material-ui/core/styles';
 import red from '@material-ui/core/colors/red';
+import { yellow } from '@material-ui/core/colors';
 
 /**
  * 
@@ -12,10 +13,10 @@ import red from '@material-ui/core/colors/red';
 export const getTheme = () => responsiveFontSizes(createTheme({
   palette: {
       primary: {
-        main: red[800]
+        main: yellow[500]
       },
       secondary: {
-        main:  red[800]
+        main:  yellow[500]
       },
   }
 }));
